@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -13,27 +12,44 @@
     />
 
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css" />
   </head>
-  <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+  <body>
+    <main>
+      <div class="main-container">
+        <!--  -->
+        <div class="img-top">
+          <img src="./images/image-equilibrium.jpg" alt="cristal clear cube" />
+          <div class="img-overlay">
+            <img src="./images/icon-view.svg" alt="eye icon" />
+          </div>
+        </div>
+
+        <div class="content">
+          <h3><a href="#">Equilibrium #3429</a></h3>
+          <p class="text">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+
+          <div class="eth">
+            <div class="eth-funds">
+              <img src="./images/icon-ethereum.svg" alt="eth icon" />
+              <p>0.041 ETH</p>
+            </div>
+
+            <div class="eth-days">
+              <img src="./images/icon-clock.svg" alt="clock icon" />
+              <p>3 days left</p>
+            </div>
+          </div>
+          <div class="creator">
+            <img src="./images/image-avatar.png" alt="avatar" />
+            <p class="creator-1p">Creation of</p>
+            <a class="creator-2p" href="#">Jules Wyvern</a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

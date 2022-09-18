@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --sblue: #8bacda;
+  --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.content {
+  display: block;
+  margin: 2rem;
+}
+
+.img-top {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-top img {
+  width: 100%;
+  display: block;
+}
+
+.img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  display: none;
+  cursor: pointer;
+}
+
+.img-overlay img {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-top:hover .img-overlay {
+  display: block;
+}
+
+.content > h3 {
+  margin: 0 0 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--sblue);
+}
+
+.eth {
+  display: flex;
+  margin: 1rem 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.eth-funds {
+  display: flex;
+  color: var(--cyan);
+}
+
+.eth-funds > img {
+  padding-right: 3px;
+}
+
+.eth-days {
+  display: flex;
+  padding-left: 33%;
+  color: var(--sblue);
+}
+
+.eth-days > img {
+  padding-right: 10px;
+}
+
+.creator {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  border-top: 1px solid #8bacda3b;
+}
+
+.creator > img {
+  max-width: 12%;
+  border: 1px solid var(--sblue);
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+
+.creator-1p {
+  color: var(--sblue);
+}
+
+.creator-2p {
+  margin-left: 5px;
+}
